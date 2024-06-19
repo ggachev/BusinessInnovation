@@ -1,0 +1,6 @@
+pandas==2.2.2
+dash_bootstrap_components==1.6.0
+dash==2.17.1
+flask==3.0.3
+openai==1.34.0
+plotly==5.22.0
