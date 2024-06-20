@@ -23,7 +23,7 @@ def generate_data(initial_value, min_value, max_value, data_label, anomaly=False
     # Generate date range for 7 days with hourly frequency (24 hours per day * 7 days)
     dates = pd.date_range(start=datetime.now() - timedelta(days=6), periods=7*24, freq='h')
     
-    # Generate historical data for the first 4 days (96 hours)
+    # Generate historical data for the first 4 days (96 hours) 
     historical = [initial_value] + [random.uniform(min_value, max_value) for _ in range((4*24) - 2)]
     
     # Insert an anomaly in the historical data if specified
